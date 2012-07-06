@@ -1,9 +1,9 @@
 [submodule "jwebsocket-common"]
 	path = jwebsocket-common
-	url = https://github.com/jam1e/jwebsocket-common.git
+	url = https://github.com/jamieforth/jwebsocket-common.git/
 [submodule "jwebsocket-server-api"]
 	path = jwebsocket-server-api
-	url = https://github.com/jam1e/jwebsocket-server-api.git/
+	url = https://github.com/jamieforth/jwebsocket-server-api.git/
 [submodule "jwebsocket-server"]
 	path = jwebsocket-server
-	url = https://github.com/jam1e/jwebsocket-server.git/
+	url = https://github.com/jamieforth/jwebsocket-server.git/
