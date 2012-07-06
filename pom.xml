@@ -8,7 +8,7 @@
   <artifactId>jWebSocket-Parent</artifactId>
   <packaging>pom</packaging>
   <name>jWebSocket-Parent</name>
-  <version>1.0</version>
+  <version>1.0-nb20614-serena-1-SNAPSHOT</version>
   <description>Parent Project for jWebSocket</description>
   <url>http://jwebsocket.org</url>
   <modules>
