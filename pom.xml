@@ -14,9 +14,9 @@
   <modules>
     <module>jwebsocket-common</module>
     <module>jwebsocket-server-api</module>
-    <!-- <module>jwebsocket-client-api</module> -->
+    <module>jwebsocket-client-api</module>
     <module>jwebsocket-server</module>
-    <!-- <module>jwebsocket-javase-client</module>     -->
+    <module>jwebsocket-client</module>
   </modules>
   
   <properties>

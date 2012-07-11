@@ -7,3 +7,9 @@
 [submodule "jwebsocket-server"]
 	path = jwebsocket-server
 	url = https://github.com/jamieforth/jwebsocket-server.git/
+[submodule "jwebsocket-client-api"]
+	path = jwebsocket-client-api
+	url = serena-git:jwebsocket-client-api/
+[submodule "jwebsocket-client"]
+	path = jwebsocket-client
+	url = serena-git:jwebsocket-client
