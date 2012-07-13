@@ -1,0 +1,29 @@
+
+* Testing jWebSocket with Autobahn
+
+[[http://www.doc.gold.ac.uk/~map01jf/reports/servers/][Current results]] [1]
+
+Something like the following should be sufficient to run the Autobahn
+server tests, assuming you have AutobahnTestSuite installed [2]
+
+#+BEGIN_EXAMPLE
+$ git clone --recursive github:jamieforth/jwebsocket-core
+
+$ cd jwebsocket-core
+
+$ mvn clean install
+
+$ cd jwebsocket-core/jwebsocket-server
+
+$ mvn -X exec:java -Dexec.mainClass=org.jwebsocket.console.JWebSocketServer -DJWEBSOCKET_HOME=<full-path-to>/jwebsocket-core/jwebsocket-server/src/test/resources/autobahn/
+
+$ wstest -m fuzzingclient -w ws://localhost:8787 -s <full-path-to>/jwebsocket-core/jwebsocket-server/src/test/config/autobahn-test.json
+#+END_EXAMPLE
+
+[1] The official jWebSocket code will fail every test, but that is
+because it expects an origin header field in the client handshake,
+which should be optional and is not sent by Autobahn.
+
+[2] In Python 2.7.3 I had to hack autobahn/websocket.py because
+urlparse.uses_query.extend and urlparse.uses_fragment have been
+removed.
