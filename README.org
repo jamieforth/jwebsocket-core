@@ -4,7 +4,7 @@
 [[http://www.doc.gold.ac.uk/~map01jf/reports/servers/][Current results]] [1]
 
 Something like the following should be sufficient to run the Autobahn
-server tests, assuming you have AutobahnTestSuite installed [2]
+server tests, assuming you have [[http://autobahn.ws/testsuite][AutobahnTestSuite]] installed [2]
 
 #+BEGIN_EXAMPLE
 $ git clone --recursive github:jamieforth/jwebsocket-core
@@ -13,7 +13,7 @@ $ cd jwebsocket-core
 
 $ mvn clean install
 
-$ cd jwebsocket-core/jwebsocket-server
+$ cd jwebsocket-server
 
 $ mvn -X exec:java -Dexec.mainClass=org.jwebsocket.console.JWebSocketServer -DJWEBSOCKET_HOME=<full-path-to>/jwebsocket-core/jwebsocket-server/src/test/resources/autobahn/
 
