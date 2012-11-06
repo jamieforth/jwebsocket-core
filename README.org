@@ -1,5 +1,16 @@
+* jWebSocket Core
 
-* Testing jWebSocket with Autobahn
+This is a minimal fork of [[http://jwebsocket.org/][jWebSocket]], a Java WebSocket library. The
+fork includes only the core server and client components, together
+with some bug fixes.
+
+Development work on this library was carried out as part of [[http://www.serena.ac.uk/][SerenA]], an
+RCUK funded research project, and the code itself was used to build a
+communication hub facilitating interaction between a backend
+multiagent-based serendipity/recommendation engine and human users
+using an Android notebook app.
+
+** Testing jWebSocket with Autobahn
 
 [[http://www.doc.gold.ac.uk/~map01jf/reports/servers/][Current results]] [1]
 
